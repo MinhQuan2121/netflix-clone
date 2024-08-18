@@ -1,2 +1,121 @@
+@font-face {
+  font-family: 'Netflix Sans', sans-serif;
+  src: url(./assets/fonts/netflixsans/Netflix\ Sans\ Light.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Netflix Sans', sans-serif;
+  src: url(./assets/fonts/netflixsans/Netflix\ Sans\ Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Netflix Sans', sans-serif;
+  src: url(./assets/fonts/netflixsans/Netflix\ Sans\ Bold.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.netflix-sans {
+  font-family: 'Netflix Sans', sans-serif;
+}
+
 :root {
+  --font-family: 'Roboto', sans-serif;
+  --primary: rgb(229, 9, 20);
+  --body: #ffffff;
+  --darker: rgba(255, 255, 255, 0.7);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: var(--font-family);
+}
+
+/*  */
+
+.btn {
+  background-color: var(--primary);
+  color: var(--body);
+  padding: 5px 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: 200ms opacity ease-in-out;
+}
+
+.btn.px-24 {
+  padding-inline: 24px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.input {
+}
+
+.container {
+  width: min(100% - 2rem, 1176px);
+  margin: 0 auto;
+}
+
+section {
+  min-height: auto;
+  padding: 4.5rem 0;
+}
+
+h2 {
+  line-height: 1;
+}
+
+.card__downloading-anim {
+  background: url(./assets/video/download-icon.gif);
+  background-size: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.ewqe {
+  width: 50%;
+  min-width: 15rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  margin: 0 auto;
+
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+
+  background: rgb(0, 0, 0);
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  border-radius: 0.75rem;
+
+  z-index: 1;
+}
+
+.video-2 {
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
