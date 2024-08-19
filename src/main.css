@@ -119,3 +119,13 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+/* Tailwind classes */
+
+.dropdownMenu[aria-expanded='true'] {
+  display: block;
+}
+
+.dropdownMenu[aria-expanded='false'] {
+  display: none;
+}
